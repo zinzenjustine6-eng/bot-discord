@@ -119,4 +119,6 @@ async def test_bienvenue(ctx):
 # ──────────────────────────────────────────
 
 if __name__ == "__main__":
-    bot.run(TOKEN)
+    token = os.environ.get("DISCORD_TOKEN")
+    print(f"Token trouvé : {bool(token)}")
+    bot.run(token)
