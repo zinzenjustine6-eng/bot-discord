@@ -119,6 +119,4 @@ async def test_bienvenue(ctx):
 # ──────────────────────────────────────────
 
 if __name__ == "__main__":
-    if not TOKEN:
-        raise ValueError("❌ DISCORD_TOKEN manquant dans le fichier .env !")
     bot.run(TOKEN)
